@@ -1,0 +1,98 @@
+@media (max-width: 2000px) {
+  body {
+    background-size: 880px;
+  }
+}
+
+@media (max-width: 1700px) {
+  body {
+    background-size: 800px;
+  }
+}
+
+@media (max-width: 1550px) {
+  body {
+    background-size: 750px;
+  }
+}
+
+@media (max-width: 1440px) {
+  body {
+    background-size: 700px;
+  }
+}
+
+@media (max-width: 1330px) {
+  body {
+    background-size: 650px;
+  }
+}
+
+@media (max-width: 1220px) {
+  body {
+    background-size: 600px;
+  }
+}
+
+@media (max-width: 1100px) {
+  body {
+    background-position-x: -100px;
+  }
+}
+
+/* O tamanho max-width 2000px é o tamanho máximo que vamos pegar, então a
+funcionalidade vai pegar até esse valor de 2000px, maior que isso não. 
+Então tudo que for menor que 2000px, ele vai estar incorporando em px.
+Então telas menores que 2000px vão pegar o tamaho de 880px. */
+
+/* No exemplo, ele diminuiu a tela no site para ajustar e a imagem da bola 
+azul-claro chegou no pé da personagem sentada, aí o valor diminuiu de 1900px
+para 1700px. Quando chegou em 1700, ele criou um novo break point. */
+
+/* Vamos criando break point dos tamanhos da tela, até chegar em nosso 
+tamanho principal que é de 1024px. Como está descrito no arquivo Style 
+no conteúdo .container width: 1024px. */
+
+/* Quando o valor chegou a 1100px, nós precisamos travar e ver como vai ficar
+o layout do nosso site e background. Porquê abaixo disso, vamos ver como ele
+vai ficar porquê pode ficar com dimensões erradas, porque diminuímos bastante. */
+
+/* Na aula, quando chegou para ajustar o tamanho para 1100px por 300px, o body 
+ganhou um novo background, que ao invés do background-size que estávamos usando, 
+passou a ser o background-position, e nesse novo atributo para ajustar ao site,
+usamos o x, que é o eixo x, ou seja, a linha horizontal com 300px. Mas quando 
+chegamos nesse tamanho, houve um problema, os elementos não estavam se ajustando, 
+porquê havia um outro valor sobreescrevendo os 1100px por 300px. Então para 
+podermos definir esse valor como prioritário, usamos a tag !important;, porém
+há uma observação, essa tag devemos usar para momentos necessários e não usar
+com muita frequência. Porquê essa tag define o que é importante ou primordial
+ao site. */
+
+/* Abaixo de 1100px no site, para ajustarmos a posição dos elementos, nós
+zeramos a princípio e depois vimos que era necessário usar valor negativo com
+o menos -. Com o valor negativo os elementos foram para trás, para quê a bola
+azul-clara ficasse ajustada com o pé da personagem sentada. */
+
+/* Quando o valor chegar a 1024px, trabalhamos os breaks points a partir do 
+tamanho da tela do nosso Style para ela ficar responsiva. Já que vamos diminui
+mais o tamanho da tela. */
+
+/* Usamos os breaks points para ajustas os elementos dos sites para vários
+tamanhos de tela. Isso varia de acordo com cada site. Nesse exemplo foi preciso
+fazer vários para quê a bola azul-clara do background ficasse ajustada ao pé
+da personagem, porque era essa a aparência no modelo que recriamos da imagem 
+exemplo. Então foi preciso fazer o redesign várias vezes, que são os break point.
+Isso para deixar o site responsivo na aparência. Ou seja, deixar mais próximo
+possível para a pessoa que estamos fazendo. */
+
+/* No nosso último break point, ele estava recebendo a tag !important, assim:
+
+@media (max-width: 1100px) {
+  body {
+    background-position-x: -100px !important;
+
+Mas tivemos que retirar ele, porquê o container é de igual importância às outras
+tags e class. E para podermos ajustar os elementos em tamanho de sites menores
+no responsive-elements, foi preciso retirar o !important neste último break point
+aqui. Por isso, não veremos ele nas próximas consultas de estudos.
+*/

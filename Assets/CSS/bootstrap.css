@@ -1,0 +1,48 @@
+/* Reset CSS */
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300; /* Aqui precisamos que a fonte fosse 300, mas no main foi maior. */
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  background-image: url("../Imagens/bolha-background.png");
+  background-repeat: no-repeat;  
+  background-position: left center;
+}
+
+/* Usar dois pontos e barra (../), a gente volta uma pasta e usar um ponto e barra (./),
+a gente está na página atual. */
+
+.container {
+  width: 1024px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+    flex-direction: row;
+}
+
+/* Aqui fazemos o reset das configurações da página, como a margin, padding, border,
+font, tamanho da fonte e alinhamento vertical. Mais detalhes procurar na internet
+sobre Reset CSS. */
+
+/* text-decoration none serve para retirar a linha abaixo do texto do link, ou seja, o 
+underline. */
+
+/* Para pegar Fonts novas para usar no site, basta pesquisar Google Fonts, escolher
+a que quer, fazer o @import para o CSS copiando o link e copiar o CSS rules specify
+families. */
+
+/* O Container é o Pai e recebe o display flex column que é alinhar os elementos em
+coluna. Já o row é o Filho e recebe o display flex row que é alinhar os 
+elementos em linha. */

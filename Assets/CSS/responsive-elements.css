@@ -1,0 +1,92 @@
+@media (max-width: 1150px) {
+  .container {
+    width: 950px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 850px;
+  }
+
+  .sobre-web-design figcaption img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 915px) {
+  body {
+    background-position: left -250px;
+    /* Colocamos o valor negativo -250px para ajustar a imagem no site. */
+    background-color: #b1f4ff;
+  }
+
+  .container {
+    width: 600px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  header nav {
+    margin: 30px 0;
+  }
+
+  .sobre-web-design article {
+    width: 100%;
+    /* Nesse tamanho o article teve que receber o valor de 100%, para melhor se
+    ajustar ao tamanho desse break point. No original em main é 250px e 
+    aqui é 100%. */
+  }
+
+  .sobre-web-design figcaption img {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+
+  footer .row {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 665px) {
+  .container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 290px;
+  }
+
+  header nav {
+    background: #fff;
+    width: 100%;
+    padding: 10px 0 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+}
+
+/* A gente faz a responsividade até 320px, que é o tamanho dos menores celulares */
+
+/* No tamanho de 450px, nós criamos um menu menor, com a nav com um background 
+branco com tamanho 100%. Acresentamos bordas com o padding e fizemos uma 
+sombreado atrás do background branco usando o box-shadow para realçar. */
+
+/* O header nav ul nesse tamanho mudou a direção do flex-direction: row para o 
+flex-direction: column. Já que o tamanho pequeno da tela não deixa harmonioso
+o menu, então para se ajustar ao tamanho a posição coluna fica melhor.*/
+
+/* E no header nav ul li acrescentamos uma margem para a aparência do menu
+ficar mais agradavél aos olhos. */
