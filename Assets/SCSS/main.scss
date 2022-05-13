@@ -1,0 +1,71 @@
+.sobre-web-design {
+  justify-content: space-between;
+  align-items: center;
+
+  //Article início
+  article {
+    width: 250px;
+
+    //H1 início
+    h1 {
+      font-size: $font-h1;
+      line-height: 90%;
+      /* Aqui foi preciso mexer no espaçamento da linha da letra do h1. */
+      font-weight: 400;
+      /* Para o layout foi preciso aumentar a fonte aqui do h1. */
+      color: $color-secundaria;
+    }
+
+    //H1 fim
+
+    //H2 P início
+    h2,
+    p {
+      color: $color-primaria;
+    }
+
+    //H2 P fim
+
+    //H2 início
+    h2 {
+      font-size: $font-h2;
+      text-transform: uppercase;
+      /* uppercase deixa as letras em maiúscula. */
+      letter-spacing: 2px;
+      /* dá espaço entre as letras. */
+      line-height: 200%;
+    }
+
+    //H2 fim
+
+    //P início
+    p {
+      margin: 10px 0 40px;
+    }
+
+    //P fim
+
+    //Figcaption início
+    figcaption {
+
+      //Img início
+      img {
+        width: 700px;
+      }
+
+      //Img fim
+    }
+
+    //Figcaption fim
+
+  }
+
+  //Article fim
+}
+
+/* Essa opção sobre-web-design criado lá no main, 
+section class="row sobre-web-design é feita para a gente ajustar apenas esse 
+elemento do site. Caso fizesse essa outra forma main .container . row, todos que
+recebesse esses elementos herdaria essa nova configuração, o que nesse caso não
+é o desejado, porquê vai ficar tão compartilhado que vai atrapalhar o nosso layout,
+e só precisamos mexer em um. Apenas esse section vai pega esse atributo.*/

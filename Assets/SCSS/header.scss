@@ -1,36 +1,68 @@
-header section{
- /* O width e o margin que antes estava aqui, foi para a página style.css e virou uma
+header {
+
+  //Section início
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  //Section fim
+
+  //Nav início
+  nav {
+
+    //Ul início
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      //Li início
+      li {
+
+        //A início
+        a {
+          margin: 0 15px;
+          color: $color-primaria;
+        }
+
+        //A fim
+      }
+
+      //Li fim
+    }
+
+    //Ul fim
+  }
+
+  //Nav fim
+}
+
+
+
+/* O width e o margin que antes estava aqui, foi para a página style.css e virou uma
  classe chamada .container lá. Assim as configurações do main que a gente precisava
  foram para lá para melhor ajustar a imagem do VidaFullStack no site. Com isso, criamos
  a class="container" no header e fazemos o mesmo no main.*/
-  display: flex;
-  /* Display: Flex, vai mudar o as características ou aparência ou displau da Div. */
-  flex-direction: row;
-  /* row alinha os elementos em linha; */
-  justify-content: space-between;
-  /* space-between mantém os elementos do site entre espaços organizados de lado.
-  Já o justify-content, ele justifica o container no header. */
-  align-items: center;
-}
+
+/* row alinha os elementos em linha; */
+
+/* space-between mantém os elementos do site entre espaços organizados de lado.
+Já o justify-content, ele justifica o container no header. */
+
+/* Display: Flex, vai mudar o as características ou aparência ou displau da Div. */
 
 /* Criar a página Header faz com que mexa nos elementos e ligue ele ao Html de forma organizada. */
 
-header nav ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;  
-}
 /* Nesse header nav ul, estamos puxando esses elementos lá do html para ser configurado. */
 /* Display Flex, como temos elementos um abaixo do outro na lista, nós queremos deixar
 na horizontal, por isso, se usa o display flex. */
 /* O list-style: none, retira aquelas bolinhas que a lista coloca nos itens dela. */
 /* align-items centraliza os itens da lista do site. */
 
-header nav ul li a {
-  margin: 0 15px;
-  color: #3399cc;
-}
-/* Aqui vamos trabalhar com os LI da lista. Padding 0 e 15px a gente trabalha com os 
+/* Aqui (header nav ul li a) vamos trabalhar com os LI da lista. Padding 0 e 15px a gente trabalha com os 
 espaçamentos laterais da lista de 15px. Depois na aula a gente refatorou e trocou o 
 padding por margin para mudar os espaços entre o menu. Ou seja foi um erro de escolha
 do Daniel, porquê ele reconheceu que era o margin que precisava e não o padding. */
@@ -44,4 +76,3 @@ ele foi incluído lá no index. Por isso foi preciso mexer aqui e colocar ele. A
 só header e agora ficou header section {display, flex...}. Isso foi feito para passar 
 esses elementos para dentro dele e  melhorar o código e reutilizar esses elementos ao 
 menu sem ficar criando muitos outros. */
-

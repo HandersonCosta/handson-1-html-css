@@ -1,0 +1,28 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2? family= Source+Sans+Pro:wght@200;300;400 & display=swap');
+
+
+/* Componentes */
+@import "./variaveis.scss";
+@import "./bootstrap.scss";
+@import "./header.scss";
+@import "./buttons.scss";
+@import "./main.scss";
+@import "./footer.scss";
+@import "./responsive-background.scss";
+@import "./responsive-elements.scss";
+
+
+/* Criar a folha de estilo o stylesheet, faz com que a gente configure nessa
+página e ligue ela ao Html Index, sem precisar fazer um por um no html index. 
+Daí a gente criar um link no Html puxando a página style. */
+
+/* O mesmo link se faz parecido com o header através do @import, assim buscamos
+na página header.css as configurações que mexemos lá. */
+
+/* OBSERVAÇÃO: o arquivo responsive foi dividido em dois. Um se chama
+responsive-background (que anteriormente era só o responsive) nele ficam os 
+break points que criamos do site. No outro, o responsive-elements vão ficar
+os elementos como main, header e footer que vamos ajustar para ficar bem
+configurado o layout a partir de telas menores, como a de celulares pequenos
+de 320px, esse inclusive é o menor tamanho que fazemos o break point. */
